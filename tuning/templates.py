@@ -77,3 +77,23 @@ SCHEMA = {
                 "Sentence 1: \"[TEXT_B] contain all features of [TEXT_A].\"\n Sentence 2: \"[TEXT_B] is a subclass of [TEXT_A].\"\nIs sentence 2 true, based on sentence 1?"],
 
 }
+
+PEMWE = {
+    "completion-prompts": [
+        "[SENTENCE] Based on this PEM water electrolyzer description, [A] belongs to the ",
+        "Within the PEMWE system described as \"[SENTENCE]\", classify the component [A] as a ",
+        "Given the context \"[SENTENCE]\", which PEMWE subsystem or component class best describes [A]? It is a ",
+        "You are labeling PEMWE hardware. From \"[SENTENCE]\", infer the category for [A]; it is a ",
+        "Consider the PEM water electrolyzer equipment described: [SENTENCE]. The component [A] should be categorized as ",
+        "In PEMWE domain terminology, what type of hardware is [A] given that [SENTENCE]? It is a ",
+        "Read the note: \"[SENTENCE]\". Assign [A] to the appropriate PEMWE subsystem, which is ",
+        "Context: [SENTENCE]. Identify which PEMWE component class [A] fits into; answer with the category: "
+    ],
+    "task-b-prompts": [
+        "Given \"[SENTENCE]\" where the component [A] is categorized as [LABEL], is the statement \"[TEXT_A] is a supertype of [TEXT_B]\" correct?",
+        "Premise: [SENTENCE]. Hypothesis: within PEMWE hierarchies, [TEXT_B] is a subtype of [TEXT_A]. Should we accept the hypothesis?",
+        "Does the claim \"[TEXT_A] is an ancestor class of [TEXT_B] in PEMWE equipment\" follow from \"[SENTENCE]\"?",
+        "If [A] belongs to [LABEL] as described in \"[SENTENCE]\", can we conclude that [TEXT_B] is a child class of [TEXT_A]?",
+        "Sentence 1: \"[SENTENCE]\". Sentence 2: \"[TEXT_B] is a subclass of [TEXT_A]\". Is sentence 2 true?"
+    ]
+}

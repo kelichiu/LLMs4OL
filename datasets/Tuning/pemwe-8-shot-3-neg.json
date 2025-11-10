@@ -1,0 +1,132 @@
+[
+  {
+    "negative": false,
+    "yes-no-label": "yes",
+    "[LABEL]": "balance of plant subsystem",
+    "[A]": "Power supplies",
+    "[SENTENCE]": "PEMWE stacks depend on regulated power supplies inside the balance-of-plant subsystem to deliver stable current during continuous operation.",
+    "task-b": true,
+    "task-b-items": {
+      "text_a": "Power & Control systems",
+      "text_b": "Balance of Plant",
+      "label": "correct"
+    }
+  },
+  {
+    "negative": false,
+    "yes-no-label": "yes",
+    "[LABEL]": "thermal management hardware",
+    "[A]": "Inline heaters",
+    "[SENTENCE]": "Inline heaters are part of the PEMWE thermal management loop, keeping feed water inside the stack’s target temperature window.",
+    "task-b": true,
+    "task-b-items": {
+      "text_a": "Inline heaters",
+      "text_b": "Thermal management",
+      "label": "correct"
+    }
+  },
+  {
+    "negative": false,
+    "yes-no-label": "yes",
+    "[LABEL]": "water supply and purification equipment",
+    "[A]": "Di-water filter",
+    "[SENTENCE]": "The deionized-water filter removes ionic contaminants before water enters the PEM electrolyzer, protecting catalyst layers from poisoning.",
+    "task-b": true,
+    "task-b-items": {
+      "text_a": "Di-water filter",
+      "text_b": "Water supply & Purification",
+      "label": "correct"
+    }
+  },
+  {
+    "negative": false,
+    "yes-no-label": "yes",
+    "[LABEL]": "measurement and diagnostics instrument",
+    "[A]": "Potentiostat/Galvanostat",
+    "[SENTENCE]": "A potentiostat/galvanostat logs IV curves during PEMWE testing, enabling polarization and impedance diagnostics.",
+    "task-b": true,
+    "task-b-items": {
+      "text_a": "Potentiostat/Galvanostat",
+      "text_b": "Measurement & Diagnostics",
+      "label": "correct"
+    }
+  },
+  {
+    "negative": false,
+    "yes-no-label": "yes",
+    "[LABEL]": "safety and environmental control device",
+    "[A]": "H2 leak detectors",
+    "[SENTENCE]": "Hydrogen leak detectors reside in the safety and environmental controls to trigger purging or shutdown if gas escapes the stack enclosure.",
+    "task-b": true,
+    "task-b-items": {
+      "text_a": "H2 leak detectors",
+      "text_b": "Safety & Environmental controls",
+      "label": "correct"
+    }
+  },
+  {
+    "negative": false,
+    "yes-no-label": "yes",
+    "[LABEL]": "membrane electrode assembly component",
+    "[A]": "PFSA membrane (Nafion 117)",
+    "[SENTENCE]": "PFSA membranes such as Nafion 117 form the PEM in PEMWE, typically 50–250 µm thick and susceptible to radical-driven degradation.",
+    "task-b": true,
+    "task-b-items": {
+      "text_a": "Membrane (PEM)",
+      "text_b": "Components",
+      "label": "correct"
+    }
+  },
+  {
+    "negative": false,
+    "yes-no-label": "yes",
+    "[LABEL]": "anode catalyst layer material",
+    "[A]": "IrO2",
+    "[SENTENCE]": "IrO₂ is the conventional anodic catalyst for PEMWE, operating at 0.2–3 mg Ir cm−2 loading but prone to dissolution under high potentials.",
+    "task-b": true,
+    "task-b-items": {
+      "text_a": "IrO₂",
+      "text_b": "Anode CL",
+      "label": "correct"
+    }
+  },
+  {
+    "negative": false,
+    "yes-no-label": "yes",
+    "[LABEL]": "cathode gas diffusion layer",
+    "[A]": "Carbon paper GDL",
+    "[SENTENCE]": "Carbon paper gas-diffusion layers support the cathode CL, distributing hydrogen, current, and heat uniformly.",
+    "task-b": true,
+    "task-b-items": {
+      "text_a": "Cathode Gas Diffusion Layer",
+      "text_b": "Components",
+      "label": "correct"
+    }
+  },
+  {
+    "negative": false,
+    "yes-no-label": "yes",
+    "[LABEL]": "diagnostic protocol",
+    "[A]": "Chronopotentiometry",
+    "[SENTENCE]": "Chronopotentiometry is used as a PEMWE diagnostic to monitor voltage stability under step changes in current density.",
+    "task-b": true,
+    "task-b-items": {
+      "text_a": "Chronopotentiometry",
+      "text_b": "Tests & Protocols",
+      "label": "correct"
+    }
+  },
+  {
+    "negative": true,
+    "yes-no-label": "no",
+    "[LABEL]": "balance of plant subsystem",
+    "[A]": "Chronoamperometry",
+    "[SENTENCE]": "Chronoamperometry probes current response at fixed voltage and does not belong to the PEMWE balance-of-plant hardware.",
+    "task-b": true,
+    "task-b-items": {
+      "text_a": "Chronoamperometry",
+      "text_b": "Balance of Plant",
+      "label": "incorrect"
+    }
+  }
+]

@@ -96,6 +96,33 @@ class Schema(BaseDataset):
         label = "yes" if data['label'] == "correct" else "no"
         return {"text": template, "label": label}
 
+class PEMWE(BaseDataset):
+    def fill_completion_template(self, data, template) -> dict:
+        template = template.replace("[A]", data['[A]'])
+        template = template.replace("[SENTENCE]", data['[SENTENCE]'])
+        # optional: if you include [LABEL] in prompts, keep replacing here
+        template = template.replace("[LABEL]", data['[LABEL]'])
+        return {"text": template, "label": data['[LABEL]']}
+
+    def fill_task_b_template(self, data, template) -> dict:
+        template = template.replace("[A]", data['[A]'])
+        template = template.replace("[SENTENCE]", data['[SENTENCE]'])
+        template = template.replace("[LABEL]", data['[LABEL]'])
+        template = template.replace("[TEXT_A]", data['task-b-items']['text_a'])
+        template = template.replace("[TEXT_B]", data['task-b-items']['text_b'])
+        label = "yes" if data['task-b-items']['label'] == "correct" else "no"
+        return {"text": template, "label": label}
+
+    def fill_task_c_template(self, data, template) -> dict:
+        template = template.replace("[A]", data['[A]'])
+        template = template.replace("[SENTENCE]", data['[SENTENCE]'])
+        template = template.replace("[LABEL]", data['[LABEL]'])
+        template = template.replace("[HEAD]", data['task-c-items']['h'])
+        template = template.replace("[TAIL]", data['task-c-items']['t'])
+        template = template.replace("[REL]", data['task-c-items']['r'])
+        label = "yes" if data['task-c-items']['label'] == "correct" else "no"
+        return {"text": template, "label": label}
+
 class DatasetFactory:
 
     def __new__(self, dataset):
@@ -104,6 +131,7 @@ class DatasetFactory:
             "geonames": [GeoNames, TEMPLATES.GEONAMES],
             "umls": [UMLS, TEMPLATES.UMLS],
             "schema": [Schema, TEMPLATES.SCHEMA],
+            "pemwe": [PEMWE, TEMPLATES.PEMWE]
         }
         return datasets[dataset][0](templates=datasets[dataset][1])
 

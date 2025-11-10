@@ -1,0 +1,14 @@
+{
+  "BOP": "balance of plant subsystem",
+  "THERM": "thermal management hardware",
+  "WATER": "water supply purification hardware",
+  "DIAG": "measurement and diagnostics instrument",
+  "SAFE": "safety and environmental control device",
+  "MEM": "proton exchange membrane component",
+  "ANODE_CL": "anode catalyst layer material",
+  "CATHODE_CL": "cathode catalyst layer material",
+  "PTL": "porous transport layer material",
+  "BPP": "bipolar plate assembly",
+  "CATHODE_GDL": "cathode gas diffusion layer",
+  "PROTO": "test or diagnostic protocol"
+}

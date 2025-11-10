@@ -13,7 +13,8 @@ class BaseConfig:
             "wn18rr": "WN18RR",
             "geonames": "Geonames",
             "umls": "NCI",
-            "schemaorg":"SCHEMA"
+            "schemaorg":"SCHEMA",
+            "pemwe": "PEMWE"
         }
         self.n_per_class = n_per_class
         self.neg_per_class = neg_per_class
